@@ -1,0 +1,82 @@
+proxies:
+  - name: DE-德国-法兰克福-DigitalOcean, LLC-1
+    server: de-v1-nat.4444cc.cc
+    port: 55511
+    sni: www.icloud.com
+    up: 100
+    down: 100
+    skip-cert-verify: true
+    type: hysteria2
+    password: d6c5b93f-6ef5-4633-a315-69d7318b028f
+  - name: HK-香港-San Po Kong-rainbow network limited-1
+    server: hk-v1-nat.4444cc.cc
+    port: 45039
+    sni: www.icloud.com
+    up: 30
+    down: 30
+    skip-cert-verify: true
+    type: hysteria2
+    password: d6c5b93f-6ef5-4633-a315-69d7318b028f
+  - name: HK-香港-香港-candy-1
+    server: hk-v1.4444cc.cc
+    port: 5858
+    sni: www.icloud.com
+    up: 20
+    down: 20
+    skip-cert-verify: true
+    type: hysteria2
+    password: d6c5b93f-6ef5-4633-a315-69d7318b028f
+  - name: HK-香港-香港-candy-2
+    server: hk-v1.4444cc.cc
+    port: 5858
+    sni: www.icloud.com
+    up: 20
+    down: 20
+    skip-cert-verify: true
+    type: hysteria2
+    password: d6c5b93f-6ef5-4633-a315-69d7318b028f
+  - name: HK-香港-香港-candy-3
+    server: hk-v1.4444cc.cc
+    port: 5858
+    sni: www.icloud.com
+    up: 20
+    down: 20
+    skip-cert-verify: true
+    type: hysteria2
+    password: d6c5b93f-6ef5-4633-a315-69d7318b028f
+  - name: HK-香港-香港-candy-4
+    server: hk-v1.4444cc.cc
+    port: 5858
+    sni: www.icloud.com
+    up: 20
+    down: 20
+    skip-cert-verify: true
+    type: hysteria2
+    password: d6c5b93f-6ef5-4633-a315-69d7318b028f
+  - name: JP-日本-东京-Alibaba.com LLC-1
+    server: jp-v1-nat.4444cc.cc
+    port: 55501
+    sni: www.icloud.com
+    up: 10
+    down: 10
+    skip-cert-verify: true
+    type: hysteria2
+    password: d6c5b93f-6ef5-4633-a315-69d7318b028f
+  - name: US-美国-洛杉矶-Cogent Communications-1
+    server: us-v1-nat.4444cc.cc
+    port: 55502
+    sni: www.icloud.com
+    up: 100
+    down: 100
+    skip-cert-verify: true
+    type: hysteria2
+    password: d6c5b93f-6ef5-4633-a315-69d7318b028f
+  - name: VN-越南-芽莊市-TUANLINHVNVN-1
+    server: vn-v1-nat.4444cc.cc
+    port: 55501
+    sni: www.icloud.com
+    up: 20
+    down: 20
+    skip-cert-verify: true
+    type: hysteria2
+    password: d6c5b93f-6ef5-4633-a315-69d7318b028f
