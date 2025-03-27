@@ -110,4 +110,5 @@ async function run(subUrl) {
 }
 
 // run(`https://proxypool.link/clash/proxies`)
-run(`https://clashe.eu.org/clash/proxies`)
+// run(`https://clashe.eu.org/clash/proxies`)
+run(`https://pp.dcd.one/clash/proxies`)
