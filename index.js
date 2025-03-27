@@ -1,6 +1,6 @@
 const axios = require('axios')
 const yaml = require('js-yaml')
-const { exec, execSync, spawn, spawnSync } = require('child_process')
+const { exec } = require('child_process')
 const { HttpsProxyAgent } = require('https-proxy-agent')
 const { writeFileSync, readFileSync } = require('fs')
 const agent = new HttpsProxyAgent('http://127.0.0.1:7890')
@@ -33,9 +33,17 @@ async function getNodes(url) {
     })
 
     const config = yaml.load(data)
+    const proxiesMap = new Map()
+    for (let proxy of config.proxies) {
+        const { type, id, server, port, password, uuid } = proxy
+        const name = `${type}-${id}-${server}-${port}-${password}-${uuid}`
+        proxy.name = name
+        proxiesMap.set(name, proxy)
+    }
     config.mode = 'Global'
     config.port = 7890
     config['external-controller'] = '127.0.0.1:9090'
+    config.proxies = Array.from(proxiesMap.values())
     writeFileSync('config.yaml', yaml.dump(config), 'utf-8')
 }
 
@@ -101,4 +109,5 @@ async function run(subUrl) {
     process.exit(0)
 }
 
-run(`https://proxypool.link/clash/proxies`)
+// run(`https://proxypool.link/clash/proxies`)
+run(`https://clashe.eu.org/clash/proxies`)
